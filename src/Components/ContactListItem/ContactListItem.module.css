@@ -1,0 +1,63 @@
+.ul {
+  margin: 0 auto;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+  width: 50%;
+  list-style: none;
+  padding: 5px;
+  position: relative;
+  border: 2px solid #b9c7b4;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.button {
+  cursor: pointer;
+  margin: 0px 0px 0px 5px;
+  height: 35px;
+  border: none;
+  width: 35px;
+  background-color: transparent;
+  background-image: url("../../img/trash.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  position: absolute;
+  left: 200px;
+  top: 10px;
+}
+.item {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.span {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.enter {
+  opacity: 0;
+  transform: scale(0.1);
+  transform: translateX(-100%);
+}
+.enterActive {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateX(0%);
+  transition: all 250ms linear;
+}
+.exit {
+  opacity: 1;
+  transform: translateX(0%);
+  transform: scale(1);
+}
+.exitActive {
+  opacity: 0;
+  transform: translateX(-100%);
+  transform: scale(0.1);
+  transition: all 250ms linear;
+}

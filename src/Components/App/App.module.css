@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(243 243 225);
+}
+.container {
+  margin: 0 auto;
+  width: 482px;
+}
+.title {
+  margin: 16px auto;
+  width: 50%;
+}
+.appear {
+  transform: translateY(-150%);
+}
+.appearActive {
+  transform: translateY(0);
+  transition: transform 500ms linear;
+}
